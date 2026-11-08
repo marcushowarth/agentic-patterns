@@ -2,7 +2,7 @@
 
 # Pattern: Optional tool arguments in quarkus-mcp-server adapters
 
-**Context:** `@Tool` methods in the Quarkus MCP adapters (KanbanMCP / MediaWikiMCP) that wrap a backend JSON-RPC / HTTP call.
+**Context:** `@Tool` methods in the Quarkus MCP adapters ([KanbanMCP](https://github.com/marcushowarth/KanbanMCP) / [MediaWikiMCP](https://github.com/marcushowarth/MediaWikiMCP)) that wrap a backend JSON-RPC / HTTP call.
 
 ## The pattern
 

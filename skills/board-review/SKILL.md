@@ -7,6 +7,8 @@ description: Review the owner's kanban TODO board (project 7) — stale cards, W
 
 # Board Review
 
+> **Tools:** the kanban tools come from [KanbanMCP](https://github.com/marcushowarth/KanbanMCP) (my own MCP server).
+
 Keeps the TODO board (project 7) honest. The daily cron already does the dumb part (Backlog→Someday at 90 days, Ready→Backlog at 60 days without a move — see the kanban memory note). This skill does the judgement part.
 
 Board facts (verify against the kanban memory note before relying on them):

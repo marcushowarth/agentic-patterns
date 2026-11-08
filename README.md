@@ -59,8 +59,9 @@ The source is a private repo, and this one is generated from it:
 1. A file is marked with `public: true` in its frontmatter.
 2. Inside a marked file, anything personal (ticket numbers, internal links, hostnames, private paths) sits in `<!-- private -->` blocks. The export removes them, so the agent still sees the full detail and this repo doesn't.
 3. Links between notes are rewritten to links between files here. A link to anything not published stops the export.
-4. A leak check looks for email addresses, own domains, internal hostnames, names, ticket numbers, private paths, IPs, account IDs and credential-like strings. **If anything matches, nothing is written.**
-5. The diff is reviewed by hand before it's committed here.
+4. The other way round, the export adds what a public reader needs and the agent doesn't: the first mention of one of my public projects becomes a link to it, a skill that calls the kanban or wiki MCP tools names the server repo under its title, and `<!-- public: ... -->` notes in the source show up as plain text.
+5. A leak check looks for email addresses, own domains, internal hostnames, names, ticket numbers, private paths, IPs, account IDs and credential-like strings. **If anything matches, nothing is written.**
+6. The diff is reviewed by hand before it's committed here.
 
 It's the same approach as [ha-energy-automations](https://github.com/marcushowarth/ha-energy-automations), where a Home Assistant label picks what gets published.
 

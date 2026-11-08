@@ -7,6 +7,8 @@ description: Add the work done in this session to the right daily journal pages 
 
 # Journal Update
 
+> **Tools:** the kanban tools come from [KanbanMCP](https://github.com/marcushowarth/KanbanMCP), and the wiki tools come from [MediaWikiMCP](https://github.com/marcushowarth/MediaWikiMCP) (both my own MCP servers).
+
 Records what was worked on in this session onto the existing `Journal:YYYY-MM-DD` pages on wiki.example.com. A session can span midnight, so each item goes on the day it happened, dated from kanban and GitHub, not from when it's written up.
 
 Wiki and kanban via `mcp__claude_ai_MediaWikiMCP__*` and `mcp__claude_ai_KanbanMCP__*` (fall back to `mcp__mediawiki__*` / `mcp__kanboard__*` if those are the ones connected).

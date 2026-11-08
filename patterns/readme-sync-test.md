@@ -4,7 +4,7 @@
 
 When a README documents **code-derived facts** (tool/endpoint tables, counts, supported formats, a "Tools (N)" header), back it with a test that **fails the build** when code and README drift.
 
-**Why:** docs silently rot. KanbanMCP's README sat at "Tools (23)" while the code had 30 (missing `moveTaskToProject`) and nobody noticed. A test turns drift into a red build instead of a stale doc.
+**Why:** docs silently rot. [KanbanMCP](https://github.com/marcushowarth/KanbanMCP)'s README sat at "Tools (23)" while the code had 30 (missing `moveTaskToProject`) and nobody noticed. A test turns drift into a red build instead of a stale doc.
 
 **How:**
 - Discover the source of truth at runtime/reflection (registered tool names, mapped routes) — don't hardcode the list in the test.

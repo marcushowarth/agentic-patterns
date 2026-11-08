@@ -2,7 +2,7 @@
 
 # Pattern — Version & Build Provenance
 
-**Applies to every new project, captured at scaffold time.** Wiring this in upfront is ~15 min; retrofitting later is fiddly (learned on FIN OPTICS).
+**Applies to every new project, captured at scaffold time.** Wiring this in upfront is ~15 min; retrofitting later is fiddly (learned on [FIN OPTICS](https://github.com/marcushowarth#fin-optics)).
 
 Every **deployable artifact** exposes its build provenance, so you can tell at a glance exactly what's live.
 
