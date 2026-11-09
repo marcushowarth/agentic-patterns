@@ -40,11 +40,15 @@ List the work items: tickets touched, PRs merged, decisions made, things sent or
 - One line per outcome: project name, kanban link, what happened. Sub-bullets `**` for detail, sparingly.
 - Kanban refs as `[https://kanban.example.com/?controller=TaskViewController&action=show&task_id=NNN #NNN]`. PRs as plain "PR 34" (no GitHub links needed).
 - Don't duplicate a line the owner already wrote; tick it or add a sub-bullet instead.
-- Don't edit Day Job (or a legacy `===work===` subsection), Standup or Events; those are the owner's.
+- Don't edit Day Job (or a legacy `===work===` subsection), Standup or Events; those are the owner's. The one exception is workouts, below.
+
+## Step 4b: Workouts from the calendar
+
+Home Assistant writes a workout to its "Home Assistant" Google calendar when a session ends, titled `Workout: gym (32 min)` or `Workout: cross trainer (41 min)`. For every date in scope, list that calendar's events and keep only titles starting with `Workout:`. Add each one missing from that day's `== Events ==` as `* HH:MM - Workout: ...` (24-hour clock), in time order, leaving the other lines as they are. Same re-read-before-write rule as Step 5. No calendar tool, or nothing new: skip.
 
 ## Step 5: Edit and report
 
 - **Re-read just before each write.** Immediately before each `editSection`, re-read the page (`getPage`, plus `getPageHistory` limit 1 for the latest revid). If anything changed since Step 3, rebuild the section from the fresh text. Never write from a copy read earlier in the turn: the owner edits these pages through the day, and `editSection` silently overwrites the whole section.
 - The owner often has today's page open in the editor. An unsaved browser edit can't be seen or merged from here, so before writing say "saving to Journal:{date} now, save or close any open edit first".
 - `editSection` per page, summary "Add <project> work for {date} (dates from kanban comments and PR merges)".
-- Report: pages edited, items per page, which are left open.
+- Report: pages edited, items per page, which are left open, and any workouts added to Events.
